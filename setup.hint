@@ -1,4 +1,4 @@
 category: X11
-requires: cygwin libXfont1
+requires: libXfont1
 sdesc: "X.Org Font Server"
 ldesc: "X.Org Font Server"
