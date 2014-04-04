@@ -1,3 +1,0 @@
-inherit xorg
-
-MAKEOPTS+=" FONTDIR=/usr/share/fonts"
