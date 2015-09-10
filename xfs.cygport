@@ -1,12 +1,14 @@
-inherit xorg git
+inherit xorg
 
 NAME="xfs"
-VERSION=1.1.3-20140603
+VERSION=1.1.4
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="X.Org Font Server"
 DESCRIPTION="xfs is the X Font Server, allowing remote X servers such as X
 Terminals to access fonts for rendering via X11 core protocol requests."
+
+CYGCONF_ARGS="--with-default-font-path=catalogue:/etc/X11/fontpath.d,built-ins"
 
 src_install() {
 	cd ${B}
